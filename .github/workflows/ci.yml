@@ -24,6 +24,8 @@ on:
       - '.github/workflows/**'
       - 'Dockerfile'
       - 'docker-compose.yml'
+  schedule:
+    - cron: '0 17 * * *'  # 每天 UTC 0 点运行
 
 jobs:
   # ==================== 核心检查（必须通过）====================
